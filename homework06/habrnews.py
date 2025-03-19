@@ -17,13 +17,15 @@ def news_list():
 @route("/add_label/")
 def add_label():
     # PUT YOUR CODE HERE
-    redirect("/news")
+    if __name__ == "__main__":
+        redirect('/news')
 
 
 @route("/update")
 def update_news():
     # PUT YOUR CODE HERE
-    redirect("/news")
+    if __name__ == "__main__":
+        redirect('/news')
 
 
 @route("/classify")
