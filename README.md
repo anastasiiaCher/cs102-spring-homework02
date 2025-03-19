@@ -107,7 +107,7 @@ False
 На текущий момент вашей задачей является написать две функции `extract_news()` и `extract_next_page()`, для корректной работы функции `get_news()`, которая в качестве аргументов принимает `url` и `n_pages` (число страниц, с которых необходимо собрать новости), а возвращает список словарей, где каждый словарь представляет собой запись об одной новости (пример вывода смотрите ниже):
 
 ```python
->>> news_list = get_news("https://news.ycombinator.com/newest", n_pages=2)
+>>> news_list = get_news("https://habr.com/ru/articles/", n_pages=2)
 Collecting data from page: https://habr.com/ru/articles/
 Collecting data from page: https://habr.com/ru/articles/page2/
 [{'author': 'Svetla79 ',
