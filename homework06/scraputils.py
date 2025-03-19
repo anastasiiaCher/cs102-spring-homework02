@@ -22,10 +22,10 @@ def get_news(url, n_pages=1):
     while n_pages:
         print("Collecting data from page: {}".format(url))
         response = requests.get(url)
-        soup = BeautifulSoup(response.text, "html.parser")
+        soup = BeautifulSoup(response.text, 'html.parser')
         news_list = extract_news(soup)
         next_page = extract_next_page(soup)
-        url = "https://news.ycombinator.com/" + next_page
+        url = "https://habr.com" + next_page
         news.extend(news_list)
         n_pages -= 1
     return news
